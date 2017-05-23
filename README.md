@@ -489,7 +489,8 @@
 			// recognizes the range input.
 			var o = document.createElement('input');
 			o.type = 'range';
-			if ( o.type === 'text' ) alert('Sorry. Your browser is not cool enough yet. Try the latest Opera.');
+			if ( o.type === 'text' ) alert('Sorry. Your browser is not cool enough yet.
+			 Try the latest Opera.');
 
 			// Set initial values of the input and ouput elements to
 			// either what's stored locally, or the number 5.
@@ -499,7 +500,8 @@
 
 			// When the user makes a selection, update local storage.
 			range.addEventListener("mouseup", function() {
-				alert("The selected value was " + range.value + ". I am using local storage to remember the value.
+				alert("The selected value was " + range.value + ". I am using local storage 
+				to remember the value.
 				 Refresh and check on a modern browser.");
 				localStorage ? (localStorage.rangeValue = range.value) : 
 				alert("Save data to database or something instead.");
