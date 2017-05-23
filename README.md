@@ -20,9 +20,11 @@
 
 	4. To Quote or Not to Quote.
 
-		That is the question. Remember, HTML5 is not XHTML. You don't have to wrap your attributes in quotation 
-		marks if you don't want to you. You don't have to close your elements. With that said, there's nothing 
-		wrong with doing so, if it makes you feel more comfortable. I find that this is true for myself.
+		That is the question. Remember, HTML5 is not XHTML. You don't have to wrap 
+		your attributes in quotation marks if you don't want to you. You don't have to 
+		close your elements. With that said, there's nothing 
+		wrong with doing so, if it makes you feel more comfortable. 
+		I find that this is true for myself.
 
 
 		<p class=myClass id=someId> 
@@ -30,9 +32,12 @@
 	5.  Make your Content Editable
 
 
-		The new browsers have a nifty new attribute that can be applied to elements, called contenteditable. 
-		As the name implies, this allows the user to edit any of the text contained within the element, 
-		including its children. There are a variety of uses for something like this, including an app as 
+		The new browsers have a nifty new attribute that can be applied to elements,
+		called contenteditable. 
+		As the name implies, this allows the user to edit any of the text 
+		contained within the element, 
+		including its children. There are a variety of uses for something like this,
+		 including an app as 
 		simple as a to-do list, which also takes advantage of local storage.
 
 
@@ -162,8 +167,10 @@
 
 	11. Required Attribute
 
-		Forms allow for a new required attribute, which specifies, naturally, whether a particular input is required. 
-		Dependent upon your coding preference, you can declare this attribute in one of two ways:
+		Forms allow for a new required attribute, which specifies, naturally, 
+		whether a particular input is required. 
+		Dependent upon your coding preference, you can declare this
+		 attribute in one of two ways:
 
 
 		<input type="text" name="someInput" required>
@@ -171,9 +178,10 @@
 
 
 		<input type="text" name="someInput" required="required">
-		Either method will do. With this code, and within browsers that support this attribute, a form cannot 
-		be submitted if that "someInput" input is blank. Here's a quick example; we'll also add the placeholder 
-		attribute as well, as there's no reason not to.
+		Either method will do. With this code, and within browsers that support 
+		this attribute, a form cannot 
+		be submitted if that "someInput" input is blank. Here's a quick example;
+		we'll also add the placeholder attribute as well, as there's no reason not to.
 
 
 		<form method="post" action="">
@@ -184,18 +192,22 @@
 
 	12. Autofocus Attribute
 
-		Again, HTML5 removes the need for JavaScript solutions. If a particular input should be "selected," 
+		Again, HTML5 removes the need for JavaScript solutions. 
+		If a particular input should be "selected," 
 		or focused, by default, we can now utilize the autofocus attribute.
 
 
 		<input type="text" name="someInput" placeholder="Douglas Quaid" required autofocus>
-		Interestingly enough, while I personally tend to prefer a more XHTML approach (using quotation marks, etc.), 
-		writing "autofocus=autofocus" feels odd. As such, we'll stick with the single keyword approach.
+
+		Interestingly enough, while I personally tend to prefer a more XHTML 
+		approach (using quotation marks, etc.), writing "autofocus=autofocus" feels odd. 
+		As such, we'll stick with the single keyword approach.
 
 	13. Audio Support
 
-		No longer do we have to rely upon third party plugins in order to render audio. HTML5 now offers
-		the <audio> element. Well, at least, ultimately, we won't have to worry about these plugins. 
+		No longer do we have to rely upon third party plugins in order to render audio. 
+		HTML5 now offers the <audio> element. Well, at least, ultimately, 
+		we won't have to worry about these plugins. 
 		For the time being, only the most recent of browsers offer support for HTML5 audio. 
 		At this time, it's still a good practice to offer some form of backward compatibility.
 
@@ -206,11 +218,13 @@
 		    <a>Download this file.</a>
 		</audio>
 		Mozilla and Webkit don’t fully get along just yet, when it comes to the audio format. 
-		Firefox will want to see an .ogg file, while Webkit browsers will work just fine with the common
-		.mp3 extension. This means that, at least for now, you should create two versions of the audio.
+		Firefox will want to see an .ogg file, while Webkit browsers 
+		will work just fine with the common .mp3 extension. This means that, 
+		at least for now, you should create two versions of the audio.
 
-		When Safari loads the page, it won’t recognize that .ogg format, and will skip it and move on 
-		to the mp3 version, accordingly. Please note that IE, per usual, doesn’t support this, 
+		When Safari loads the page, it won’t recognize that .ogg format, 
+		and will skip it and move on to the mp3 version, accordingly.
+		 Please note that IE, per usual, doesn’t support this, 
 		and Opera 10 and lower can only work with .wav files.
 
 
@@ -242,12 +256,13 @@
 
 	15. Preload Videos
 
-		The preload attribute does exactly what you'd guess. Though, with that said, you should first
-		 decide whether or not you want the browser to preload the video. Is it necessary? Perhaps, 
-		 if the visitor accesses a page, which is specifically made to display a video, you should definitely
-		  preload the video, and save the visitor a bit of waiting time. Videos can be preloaded by 
-		  setting preload="preload", or by simply adding preload. I prefer the latter solution; 
-		  it's a bit less redundant.
+		The preload attribute does exactly what you'd guess. Though, with that said, 
+		you should first decide whether or not you want the browser to preload the video. 
+		Is it necessary? 
+		Perhaps, if the visitor accesses a page, which is specifically made to display a video,
+		you should definitely preload the video, and save the visitor abit of 
+		waiting time. Videos can be preloaded bysetting preload="preload", or by simply 
+		adding preload. I prefer the latter solution; it's a bit less redundant.
 
 	16.Display Controls
 
@@ -263,7 +278,8 @@
 
 	17. Regular Expressions
 
-		How often have you found yourself writing some quickie regular expression to verify a particular textbox.
+		How often have you found yourself writing some quickie regular expression
+		 to verify a particular textbox.
 		 Thanks to the new pattern attribute, we can insert a regular expression directly into our markup.
 
 
@@ -279,17 +295,19 @@
 		    <button type="submit">Go </button>
 		</form>
 
-		If you're moderately familiar with regular expressions, you'll be aware that this pattern: 
+		If you're moderately familiar with regular expressions, you'll be 
+		aware that this pattern: 
 		[A-Za-z]{4,10} accepts only upper and lowercase letters. This string must also have a 
 		minimum of four characters, and a maximum of ten.
 
 	18. Detect Support for Attributes
 
-		What good are these attributes if we have no way of determining whether the browser recognizes them? Well,
-		 good point; but there are several ways to figure this out. We'll discuss two. The first option is 
-		 to utilize the excellent Modernizr library. Alternatively, we can create and dissect these elements
-		  to determine what the browsers are capable of. For instance, in our previous example, if we want to 
-		  determine if the browser can implement the pattern attribute, we could add a bit of JavaScript to our page:
+		What good are these attributes if we have no way of determining whether 
+		the browser recognizes them? Well,good point; but there are several ways to figure this out.
+		We'll discuss two. The first option is to utilize the excellent Modernizr library. 
+		Alternatively, we can create and dissect these elements to determine what the browsers 
+		are capable of. For instance, in our previous example, if we want to determine if the browser
+		 can implement the pattern attribute, we could add a bit of JavaScript to our page:
 
 
 		alert( 'pattern' in document.createElement('input') ) // boolean;
@@ -327,9 +345,10 @@
 
 
 		<h1 id=someId customAttribute=value> Thank you, Tony. </h1>
-		...the validators would kick up a fuss! But now, as long as we preface our custom attribute with "data,"
-		 we can officially use this method. If you've ever found yourself attaching important data to 
-		 something like a class attribute, probably for JavaScript usage, this will come as a big help!
+		...the validators would kick up a fuss! But now, as long as we preface our custom 
+		attribute with "data," we can officially use this method. 
+		If you've ever found yourself attaching important data to something like a class attribute, 
+		probably for JavaScript usage, this will come as a big help!
 
 		HTML Snippet
 
